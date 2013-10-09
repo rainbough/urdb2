@@ -26,6 +26,9 @@ yes_man = Movie.create(
   trailer_url: "http://youtu.be/rvpsiIe2vBE",
   description: "A guy challenges himself to say 'yes' to everything for an entire year."
 )
+angelina = Star.create(name: 'Angelina Jolie',
+                  headshot_url: 'http://ia.media-imdb.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_SY98_CR6,0,67,98_.jpg',
+                  bio: 'stuff about Angelina Jolie')
 
 jim_carrey = Star.create(name: 'Jim Carrey',
                       headshot_url: 'http://ia.media-imdb.com/images/M/MV5BMTQwMjAwNzI0M15BMl5BanBnXkFtZTcwOTY1MTMyOQ@@._V1_SY317_CR22,0,214,317_.jpg',
@@ -38,6 +41,9 @@ zooey = Star.create(name: 'Zooey Deschanel',
 joseph = Star.create(name: 'Joseph Gordon-Levitt',
                       headshot_url: 'http://ia.media-imdb.com/images/M/MV5BMTQzOTg0NTkzNF5BMl5BanBnXkFtZTcwNTQ4MTcwOQ@@._V1_SY317_CR35,0,214,317_.jpg',
                       bio: 'Joseph Gordon-Levitt is an American actor, director, producer, and writer. As a child star, he appeared in the films A River Runs Through It, Angels in the Outfield, Beethoven, and 10 Things I Hate About You, and as Tommy Solomon in the TV series 3rd Rock from the Sun.')
+
+
+hackers.roles.create(character: 'Kate', star: angelina )
 
 yes_man.roles.create(character: 'Carl', star: jim_carrey)
 yes_man.roles.create(character: 'Allison', star: zooey)
